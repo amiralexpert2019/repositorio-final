@@ -1,0 +1,282 @@
+#minus{display:none;}
+#mainus{display:none;}
+#omega{display:none;}
+#beta{display:none;}
+#audio{display:none;} /* colocar isso em todas as paginas que contem o #player*/
+
+
+/*FORMATAÇÃO DO MENU SUPERIOR*/
+.menu-drop{
+    
+    z-index: 1;
+    position: fixed;
+    top: 1px;
+    width: 100vw;
+    height: 8vh;
+    border-bottom: 1px solid whitesmoke;
+    padding: 1px;
+
+    
+}
+
+.menu-drop li{
+  
+    padding-left: 55px;
+    padding-right: 70px;
+    display: inline-block;
+    color:rgb(194, 191, 191);
+    
+       
+    
+    
+
+}
+
+nav li:hover{
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
+.menu-drop li:hover{
+    color:#fa7575;
+    text-shadow: 50px;
+    border-color:black;
+   
+
+}
+
+nav{
+    animation: neon alternate infinite 3s ease-in-out;
+}
+
+a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    
+}
+
+a:hover{
+    color:#fa7575;
+}
+/*FORMATAÇÃO DO MENU SUPERIOR*/
+
+body{
+    margin:0;
+    background-color :black;
+}
+
+
+/**/
+
+   /*conteudo de som abaixo*/
+
+/*abaixo, as imagens que compoem o evento de som*/
+#icn1{
+    width: 13px ;
+    height: 13px ;
+    cursor:pointer;
+}
+
+#icn2{
+    width: 13px ;
+    height: 13px ;
+    cursor:pointer;
+}
+
+#icn3{
+    width: 13px ;
+    height: 13px ;
+    cursor:pointer;
+}
+
+#icn4{
+    width: 13px ;
+    height: 13px ;
+    cursor:pointer;
+}
+
+#icn5{
+    width: 13px ;
+    height: 13px ;
+    cursor:pointer;
+}
+/*acima, as imagens que compoem o evento de som*/
+
+/*div contendo icnº*/
+#mixer{
+    position:fixed;
+    right:35px;
+    top: 5px;
+}
+
+#mixer2{
+    font-size:small;
+    color:red;
+    position:fixed;
+    width: 160px ;
+    right: -20px;
+    top:20px;
+
+}
+/*conteudo de som acima*/
+
+
+
+#blue p{
+
+    color:white;
+
+}
+
+#blue h1{
+    color:white;
+}
+
+#blue{
+    position:absolute;
+    width: 600px;
+    height: 300px;
+    top:300px;
+    left:120px;
+    text-align: left;
+    z-index: 1;
+   
+}
+
+#hs{
+    text-align: left;
+    }
+
+#fundo{
+    position:absolute;
+    border:solid 1px transparent;
+    border-radius: 50%;
+    width: 200px ;
+    height: 200px ;
+    top:210px;
+    right:340px;
+    margin:0;
+ 
+
+}
+
+#fundo2{
+    position:absolute;
+    
+    width: 100vw ;
+    height: 100vh ;    
+    margin:0;
+ 
+
+}
+.conteudo{
+    position:absolute;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+#prf{
+    position:absolute;
+    width: 480px;
+    height: 480px;
+    top:80px;
+    right:200px;
+    
+   
+    
+   
+}
+
+#prf1{
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    border-bottom: 1px solid transparent;
+    border-radius: 50%;
+    top:260px;
+    right:390px;
+    margin:0;
+ 
+   
+   
+}
+
+#prf1:hover {
+    
+    -webkit-transform:scale(2); /* Safari and Chrome */
+    -moz-transform:scale(2); /* Firefox */
+    -ms-transform:scale(2); /* IE 9 */
+    -o-transform:scale(2); /* Opera */
+     transform:scale(2);
+
+     -webkit-transition: all 1s ease; /* Safari and Chrome */
+     -moz-transition: all 1s ease; /* Firefox */
+     -ms-transition: all 1s ease; /* IE 9 */
+     -o-transition: all 1s ease; /* Opera */
+     transition: all 1s ease;
+ 
+     
+}
+
+
+
+
+@keyframes neon{
+
+    from{
+        filter:drop-shadow(0 0 0 var(--cor-neon));
+    }
+
+
+to {
+
+    filter:drop-shadow(0 0 30px var(--cor-neon));
+ }
+}
+
+nav{
+    animation: neon 3s alternate infinite ease-in-out;
+    
+    
+}
+nav li:hover{
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+    
+     -webkit-transition: all 1s ease; /* Safari and Chrome */
+     -moz-transition: all 1s ease; /* Firefox */
+     -ms-transition: all 1s ease; /* IE 9 */
+     -o-transition: all 1s ease; /* Opera */
+     transition: all 1s ease;
+}
+
+
+
+.menu-drop{
+    --cor-neon:rgb(255, 255, 255);
+}
+
+   
+
+
+
+
+
+#hs1{
+position:absolute;
+left:127px;
+bottom:300px;
+font-style: normal;
+color:white;
+z-index: 1;
+
+}
+

@@ -1,0 +1,244 @@
+
+#minus{display:none;}
+#mainus{display:none;}
+#omega{display:none;}
+#beta{display:none;}
+
+#audio{display:none;}
+
+/*FORMATAÇÃO DO MENU SUPERIOR*/
+.menu-drop{
+    z-index: 1;
+    position: fixed;
+    top: 1px;
+    width: 100vw;
+    height: 8vh;
+    border-bottom: 1px solid white;
+    
+    padding: 1px;
+    
+}
+
+.menu-drop li{
+  
+    padding-left: 55px;
+    padding-right: 70px;
+    display: inline-block;
+    color:rgb(194, 191, 191);
+}
+
+.menu-drop li:hover{
+    color:#fa7575;
+    text-shadow: 50px;
+    border-color:black;
+   
+
+}
+
+a{
+    text-decoration: none;
+    color:rgb(170, 166, 166);
+    
+}
+
+a:hover{
+    color:#fa7575;
+}
+/*FORMATAÇÃO DO MENU SUPERIOR*/
+
+
+body{
+    margin:0;
+    background-color:black;
+    overflow-y: hidden;
+}
+
+/**/
+
+   /*conteudo de som abaixo*/
+
+/*abaixo, as imagens que compoem o evento de som*/
+#icn1{
+    width: 13px ;
+    height: 13px ;
+    cursor:pointer;
+}
+
+#icn2{
+    width: 13px ;
+    height: 13px ;
+    cursor:pointer;
+}
+
+#icn3{
+    width: 13px ;
+    height: 13px ;
+    cursor:pointer;
+}
+
+#icn4{
+    width: 13px ;
+    height: 13px ;
+    cursor:pointer;
+}
+
+#icn5{
+    width: 13px ;
+    height: 13px ;
+    cursor:pointer;
+}
+/*acima, as imagens que compoem o evento de som*/
+
+/*div contendo icnº*/
+#mixer{
+    position:fixed;
+    right:35px;
+    top: 5px;
+}
+
+#mixer2{
+    font-size:small;
+    color:red;
+    position:fixed;
+    width: 160px ;
+    right: -20px;
+    top:20px;
+
+}
+/*conteudo de som acima*/
+
+
+#hs{
+    color:white;
+    position:absolute;
+    top:30%;
+    left:41%;
+
+}
+
+#p1{
+    color:white;
+    position:absolute;
+    top:37%;
+    left:36%;
+
+}
+/*div cotendo a imagem #whats*/
+.whats{
+position:absolute;
+width:100px;
+height: 100px;
+
+top:50%;
+left:65%;
+
+}
+
+#zap{
+    width:100px;
+    height: 100px;
+
+}
+/*div cotendo a imagem #disc*/
+.discord{
+    position:absolute;
+    width:100px;
+    height: 100px;
+   
+    top:50%;
+    left:25%;
+    
+
+}
+
+#disc{
+    width:100px;
+    height: 100px;
+
+}
+
+/*div cotendo a imagem #instag*/
+.insta{
+    position:absolute;
+    width:100px;
+    height: 100px;
+   
+    top:50%;
+    left:45%;
+   
+}
+
+#instag{
+    width:100px;
+    height: 100px;
+}
+
+/*espans contendo texto de informação*/
+#sp1{
+    color:white;
+}
+
+
+#sp2{
+    color:white;
+}
+
+
+#sp3{
+    color:white;
+}
+
+/*div main*/
+
+.conteudo{
+    width:100%;
+    height:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#fundo{
+    width:100%;
+    height:30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@keyframes neon{
+
+    from{
+        filter:drop-shadow(0 0 0 var(--cor-neon));
+    }
+
+
+to {
+
+    filter:drop-shadow(0 0 30px var(--cor-neon));
+ }
+}
+
+nav{
+    animation: neon 3s alternate infinite ease-in-out;
+    
+    
+}
+nav li:hover{
+    
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+}
+
+.menu-drop{
+    --cor-neon:rgb(255, 0, 0);
+
+}
+

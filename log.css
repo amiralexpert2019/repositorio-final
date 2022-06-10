@@ -1,0 +1,89 @@
+
+body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.conteudo{
+    position:absolute;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+#star{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.div1{
+    position:absolute;
+    width: 500px;
+    height:100px;
+    left:22%;
+    top:20%;
+   
+}
+
+.div2{
+    position:absolute;
+    width: 40px;
+    height:40px;
+    left: 50%;
+    top:50%;
+   
+    animation: neon infinite alternate 2s;
+    --cor-neon: rgb(96, 235, 245);
+}
+
+#hs{
+color:white;
+position: absolute;
+text-align: center;
+text-shadow: 10px;
+top:60%;
+left:60%;
+
+}
+
+
+
+#btn{
+    
+text-align: center;
+font-size: large;
+position: absolute;
+height: 40px;
+width: 40px;
+border: 1px solid transparent;
+border-bottom-left-radius: 50% ;
+
+
+}
+
+
+
+
+
+@keyframes neon{
+
+    from{
+        filter:drop-shadow(0 0 0 var(--cor-neon));
+    }
+
+
+to {
+
+    filter:drop-shadow(0 0 30px var(--cor-neon));
+ }
+}
+
+button{
+    cursor: pointer;
+}

@@ -1,0 +1,115 @@
+
+
+
+
+
+.container{
+
+
+background-size:contain;
+background-color: aqua;
+position:absolute;
+width: 130px;
+height: 90px;
+top:70%;
+
+}
+ 
+  
+
+
+@keyframes fly{
+
+
+  100%{
+    transform:translateX(calc(100vw -130px));
+  }
+
+}
+
+
+.nave{
+  position:absolute;
+  top:50%;
+  left:10px;
+  animation-name: fly;
+  animation-duration: 2s;
+}
+
+
+
+
+#fundo{
+  position:relative;
+  width:100vw;
+  height:100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body{
+  margin:0;
+  padding:0
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.box{
+
+  
+ width: 700px;
+ height: 700px;
+ background-color:rgb(103, 103, 243);
+
+
+transition-property: background-color,border-radius;
+transition-duration: 2s ,3s;
+
+
+transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+
+} /*
+/**
+.box:hover{
+  
+  background-color:rgb(233, 133, 133);
+  border-radius: 50%;
+ 
+}
+
+
+/*
+#img1{
+  
+ position:absolute;
+width: 100px ;
+height: 100px ;
+
+
+
+transform: scaleX(0.5) translateX(100px) translatey(50px) skewX(20deg);
+
+}
+
+*/
+
+
+
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html 5>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inicio.css">
+    <title>Inicio</title>
+</head>
+<body>
+ 
+         <div id="nav">
+        <nav class="menu-drop">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="skills.html">Minhas skills</a></li>
+                <li><a href="perfil.html">Meu perfil</a></li>
+              
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="work.html">Trabalhe comigo</a></li>
+                <section id="mixer">
+
+                    <button id="minus" onclick="diminuirvolume()">--</button>
+                    <button id="mainus" onclick="aumentarvolume()">++</button>
+                    <button id="omega" onclick="tocar()">Tocar</button>
+                    <button id="beta"  onclick="pausar()">Pausar</button>
+                    
+                
+                  
+                <label id="lb1" for="omega">
+                    <img id="icn1" src="play-16.png">
+                 </label>
+            
+                 <label id="lb2" for="minus">
+                    <img id="icn2" src="volume minus.png">
+                    </label>
+            
+                    <label id="lb3" for="mainus">
+                        <img  id="icn3"src="volume plus.png">
+                        </label>
+            
+                        <label id="lb4" for="beta">
+                            <img id="icn4" src="pause.png">
+                        </label>
+ 
+                
+                            </section>
+     
+                            <section id="mixer2">
+                             <progress id="progresso" max="0" value="0"></progress>
+             
+             
+                             <span id="tempo_atual">00:00:00</span> 
+                         <span id="tempo_total">00:00:00</span>
+                         </section>
+            </ul>
+        </nav>
+         </div>
+
+         
+             
+
+
+
+
+
+
+<main class="conteudo">
+    <img id="fundo" src="neonbh1.gif">
+    <img id="fundo2" src="gifs.gif">
+    
+    
+    <div id="fotos">
+    <img id="prf" src="neopf.jpg" title="copyright.com">
+    <img id="prf1" src="me.png" alt="não foi possivel carregar" title="copyright.com">
+    </div>
+    <div id="blue">
+        <h1 id="hs1">Bem Vindos!</h1>
+        
+        <p id="p1">Ola meu nome é Elielton, sou um estudante de programação<br>
+            e almejo tornar isto um mero degrau.<br><br>
+        
+        
+            Desejo me dedicar na construção de conhecimentos e habilidades solidas como<br>
+            programador da atualidade, e tornar meu amor por tecnologia em insights inovadores<br>
+            e incriveis! <br><br>
+        
+        
+        
+            Navegue pelos topicos acima para saber mais sobre min!
+        </p>
+        
+        </div>
+
+        <!---->
+        
+   </main>      
+    
+ <!--player de audio principal-->
+ <audio controls="controls" id="audio" type="mp3/audio" >
+    <source src="shinig justice.mp3">
+</audio>
+
+ <!--scripts que conectam a arquivos js para controle de eventos de som-->
+ <script type="text/javascript" src="funções.js">
+</script>
+
+<script type="text/javascript" src="mixer.js">
+</script>
+
+   
+  
+  
+
+</body>
+</html>

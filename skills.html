@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="skills.css">
+    <title>Skills</title>
+</head>
+<body>
+
+    <div id="nav">
+    <nav class="menu-drop">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="skills.html">Minhas skills</a></li>
+            <li><a href="perfil.html">Meu perfil</a></li>
+          
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="work.html">Trabalhe comigo</a></li>
+           
+            <section id="mixer">
+              
+               <button id="minus" onclick="diminuirvolume()">--</button>
+               <button id="mainus" onclick="aumentarvolume()">++</button>
+               <button id="omega" onclick="tocar()">Tocar</button>
+               <button id="beta"  onclick="pausar()">Pausar</button>
+               
+           
+           
+               <label id="lb1" for="omega">
+                <img id="icn1" src="play-16.png">
+             </label>
+        
+             <label id="lb2" for="minus">
+                <img id="icn2" src="volume minus.png">
+                </label>
+        
+                <label id="lb3" for="mainus">
+                    <img  id="icn3"src="volume plus.png">
+                    </label>
+        
+                    <label id="lb4" for="beta">
+                        <img id="icn4" src="pause.png">
+                    </label>
+
+           
+                       </section>
+
+                       <section id="mixer2">
+                        <progress id="progresso" max="0" value="0"></progress>
+        
+        
+                        <span id="tempo_atual">00:00:00</span> 
+                    <span id="tempo_total">00:00:00</span>
+                    </section>
+        </ul>
+    </nav>
+    </div>
+    <!--acima,div da barra lateral separada da div main-->
+
+    <!--abaixo,div main sendo pai de todas as outras divs ate o momento, e contendo todo o conteudo dentro de si-->
+    <main class="container">
+    <div>
+<img id="fundo" src="gifs.gif" alt="não foi possivel carregar" title="fundo">
+    </div>
+
+
+
+    <div id="cont1">
+            <h1>Linguagens</h1>
+            <p>Algumas linguagens de programação, estilização<br>
+             e marcação que conheço e estou aprendendo atualmente.
+            </p>
+            <!--disposição de imagens-->
+            <div class="wrapper"> <!--inicio wrapper-->
+            
+            <div>
+         
+                <img src="html icon.png">
+                <ul>
+                    <li>Tags avançadas.</li> 
+                    <li>implementação de paginas e layouts.</li> 
+                 </ul>
+            </div>
+            
+            <div><!--div1-->
+                 <img src="php logo.png">
+                 <ul>
+                    <li>conceitos basicos.</li> 
+                    <li>variaveis.</li> 
+                    <li>Conexão entre formularios e BDs</li>
+                 </ul>
+                </div>
+               
+            <div><!--div2-->
+              
+                 <img src="js logo.png">
+                 <ul>
+                    <li>conceitos iniciantes.</li> 
+                    <li>implementação de funções mínimas.</li> 
+                 </ul>
+                </div>
+                
+                 <div><!--div3-->
+                
+                 <img src="java icon.png">
+                 <ul>
+                    <li>conceitos básicos.</li> 
+                    <li>Orientação a objetos e framer.</li> 
+                 </ul>
+                </div>  
+
+                <div><!--div4-->
+                
+                    <img src="sql icon.png">
+                    <ul>
+                       <li>conceitos básicos.</li> 
+                       <li>nivel iniciante em implementação.</li> 
+                    </ul>
+                   </div>  
+
+                   <div><!--div5-->
+                
+                    <img src="cssicon.png">
+                    <ul>
+                       <li>conceitos intermediarios</li> 
+                       <li>implementação de funções úteis</li> 
+                    </ul>
+                   </div>  
+
+              
+
+             
+        </div> <!--fim wrapper-->
+         </div> <!--fim cont1-->
+
+         <div id="cont2"> <!--inicio cont2-->
+            <h1>Ambientes</h1>
+            <p>Estes, são alguns ambientes de desenvolvimento que<br>
+             ja usei antes ou tenho experiência.
+            </p>
+            <!--disposição de imagens-->
+            <div class="wrapper2"> <!--inicio wrapper2-->
+            
+            <div>
+         
+                <img src="netbeans.png">
+                <ul>
+                    <li>conceitos intermediarios.</li> 
+                    <li>implementação básica.</li> 
+                 </ul>
+            </div>
+            
+            <div><!--div6-->
+                 <img src="mysql icon.png">
+                 <ul>
+                    <li>conceitos basicos.</li> 
+                    <li>implementação básica.</li> 
+                 </ul>
+                </div>
+               
+
+                
+                 <div><!--div8-->
+                
+                 <img src="vs icon.png">
+                 <ul>
+                    <li>conceitos intermediarios.</li> 
+                    <li>experiência na interface.</li> 
+                 </ul>
+                </div>  
+             
+        </div> <!--fim wrapper2-->
+         </div> <!--fim cont2-->
+            
+    
+        
+
+
+ <!--player de audio principal-->
+ <audio controls="controls" id="audio" type="mp3/audio" >
+   <source src="shinig justice.mp3">
+</audio>
+
+<!--scripts que conectam a arquivos js para controle de eventos de som-->
+<script type="text/javascript" src="funções.js">
+</script>
+
+<script type="text/javascript" src="mixer.js">
+</script>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,331 @@
+
+#audio{
+    display:none;
+}
+button{
+    display:none;
+}
+
+/*FORMATAÇÃO DO MENU SUPERIOR*/
+.menu-drop{
+    overflow-y: none;
+    overflow-x: none;
+
+    z-index: 1;
+    position: fixed;
+    top: 1px;
+    width: 100vw;
+    height: 8vh;
+    border-bottom:1px solid white;
+    padding: 1px;
+    
+}
+/*formatação base da li*/
+.menu-drop li{
+  
+    padding-left: 55px;
+    padding-right: 70px;
+    display: inline-block;
+    color:rgb(255, 255, 255);
+    /*color:rgb(194, 191, 191); */
+}
+/*formatação ao passar o mouse nos li*/
+.menu-drop li:hover{
+    color:#fa7575;
+    text-shadow: 50px;
+    border-color:black;
+   
+
+}
+
+a{
+    text-decoration: none;
+    color:rgb(170, 166, 166);
+    
+}
+
+a:hover{
+    color:#fa7575;
+}
+/*FORMATAÇÃO DO MENU SUPERIOR*/
+
+body{
+
+    margin:0;
+   
+    
+
+}
+
+
+/*imagem de fundo*/
+
+#fundo{
+    
+    position:absolute;
+    height:1300px;
+    width:100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+
+
+
+/*div1*/
+#cont1{
+    
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    position:absolute;
+    width:1000px;
+    height:300px;
+    left:140px;
+    top:100px;
+    border:solid 1px transparent;
+    border-radius: 10px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+
+}
+/*div2*/
+#cont2{
+    color:white;
+    padding: 5px;
+    position:absolute;
+    width:1000px;
+    height:300px;
+    left:140px;
+    top:550px;
+    border:solid 1px transparent;
+    border-radius: 10px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+
+    
+   
+
+}
+/*tag main*/
+
+
+
+.container{
+    
+    height:100%;
+    width:100% ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+#nav{
+    position:absolute;
+}
+
+
+
+
+img{
+    width: 90px;
+    height: 80px;
+    
+ 
+   /*conteudo de som abaixo*/
+}
+/*abaixo, as imagens que compoem o evento de som*/
+#icn1{
+    width: 13px ;
+    height: 13px ;
+    cursor:pointer;
+}
+
+#icn2{
+    width: 13px ;
+    height: 13px ;
+    cursor:pointer;
+}
+
+#icn3{
+    width: 13px ;
+    height: 13px ;
+    cursor:pointer;
+}
+
+#icn4{
+    width: 13px ;
+    height: 13px ;
+    cursor:pointer;
+}
+
+#icn5{
+    width: 13px ;
+    height: 13px ;
+    cursor:pointer;
+}
+/*acima, as imagens que compoem o evento de som*/
+
+/*div contendo icnº*/
+#mixer{
+    position:fixed;
+    right:35px;
+    top: 5px;
+}
+
+#mixer2{
+    font-size:small;
+    color:red;
+    position:fixed;
+    width: 160px ;
+    right: -20px;
+    top:20px;
+
+}
+/*conteudo de som acima*/
+.wrapper{
+    
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 140px;
+    
+    background-color: transparent;
+    
+    font-size: small;
+    list-style: none;
+  
+    display:grid;
+
+    animation: neon 3s alternate infinite ease-in-out;
+    --cor-neon:rgb(255, 255, 255);
+    
+   
+
+}
+
+.wrapper2{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 140px;
+    
+    background-color: transparent;
+    
+    font-size: small;
+    list-style: none;
+  
+    display:grid;
+    animation: neon 3s alternate infinite ease-in-out;
+    --cor-neon:rgb(255, 255, 255);
+   
+
+}
+
+li#image{
+list-style: none;
+
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+@keyframes neon{
+
+    from{
+        filter:drop-shadow(0 0 0 var(--cor-neon));
+    }
+
+
+to {
+
+    filter:drop-shadow(0 0 30px var(--cor-neon));
+ }
+}
+
+nav{
+    animation: neon 3s alternate infinite ease-in-out;
+    --cor-neon:rgb(255, 255, 255);
+    
+}
+
+.menu-drop{
+    --cor-neon:rgb(255, 255, 255);
+    
+
+}
+
+
+nav li:hover{
+    -webkit-transform:scale(1.25);
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+
+     -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+
+  body::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);        /* color of the tracking area */
+  }
+
+
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 30, 0);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(255, 182, 182);  /* creates padding around scroll thumb */
+  }
+
+  img {
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
+
+img:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+}

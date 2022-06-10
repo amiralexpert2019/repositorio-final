@@ -1,0 +1,341 @@
+#minus{display:none;}
+#mainus{display:none;}
+#omega{display:none;}
+#beta{display:none;}
+
+#audio{display:none;}
+
+/*FORMATAÇÃO DO MENU SUPERIOR*/
+.menu-drop{
+    z-index: 1;
+    position: fixed;
+    top: 1px;
+    width: 100vw;
+    height: 8vh;
+    border-bottom: solid 1px white;
+    padding: 1px;
+    
+}
+nav{
+    animation: neon 3s alternate infinite ease-in-out;
+    --cor-neon:rgb(33, 117, 243);
+    
+}
+
+.menu-drop li{
+  
+    padding-left: 55px;
+    padding-right: 70px;
+    display: inline-block;
+    color:rgb(194, 191, 191);
+}
+
+.menu-drop li:hover{
+    color:#fa7575;
+    text-shadow: 50px;
+    border-color:black;
+   
+
+}
+
+a{
+    text-decoration: none;
+    color:rgb(170, 166, 166);
+    
+}
+
+a:hover{
+    color:#fa7575;
+}
+/*FORMATAÇÃO DO MENU SUPERIOR*/
+
+
+body{
+    background-color: #1D2329;
+    margin: 0;
+}
+
+/**/
+
+/*conteudo de som abaixo*/
+
+/*abaixo, as imagens que compoem o evento de som*/
+#icn1{
+    width: 13px ;
+    height: 13px ;
+    cursor:pointer;
+}
+
+#icn2{
+    width: 13px ;
+    height: 13px ;
+    cursor:pointer;
+}
+
+#icn3{
+    width: 13px ;
+    height: 13px ;
+    cursor:pointer;
+}
+
+#icn4{
+    width: 13px ;
+    height: 13px ;
+    cursor:pointer;
+}
+
+#icn5{
+    width: 13px ;
+    height: 13px ;
+    cursor:pointer;
+}
+/*acima, as imagens que compoem o evento de som*/
+
+/*div contendo icnº*/
+#mixer{
+    position:fixed;
+    right:35px;
+    top: 5px;
+}
+
+#mixer2{
+    font-size:small;
+    color:red;
+    position:fixed;
+    width: 160px ;
+    right: -20px;
+    top:20px;
+
+}
+/*conteudo de som acima*/
+
+
+
+
+
+@keyframes neon{
+
+    from{
+        filter:drop-shadow(0 0 0 var(--cor-neon));
+    }
+
+
+to {
+
+    filter:drop-shadow(0 0 30px var(--cor-neon));
+ }
+}
+
+nav{
+    animation: neon 3s alternate infinite ease-in-out;
+    
+    
+}
+nav li:hover{
+    -webkit-transform:scale(1.25);
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+
+     -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
+
+.menu-drop{
+    --cor-neon:rgb(255, 255, 255);
+
+}
+
+#rec1{
+    
+    animation: neon 1.5s alternate infinite ease-in-out;
+    position:absolute;
+    width:300px;
+    height: 300px;
+    top:72%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    animation: neon 3s alternate infinite ease-in-out;
+    --cor-neon:rgb(255, 255, 255);
+}
+
+#rec2{
+
+    position:absolute;
+    width:140px;
+    height:170px;
+    top:72%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    animation: neon 3s alternate infinite ease-in-out;
+    --cor-neon:rgb(255, 255, 255);
+    
+}
+
+.wrapper2{
+    position:absolute;
+    width:300px;
+    height: 300px;
+    top:36%;
+    right:70%;
+    place-items:center;
+    animation: neon 3s alternate infinite ease-in-out;
+    --cor-neon:rgb(255, 255, 255);
+}
+
+
+#rec3{
+    --cor-neon:rgb(55, 0, 255);
+    animation: neon 1.5s alternate infinite ease-in-out;
+    position:absolute;
+    width:300px;
+    height: 300px;
+    top:80%;
+    left: 1000px;
+    transform: translate(-50%, -50%);
+}
+
+#rec4{
+    position:absolute;
+    width:190px;
+    height:190px;
+    top: 77.8%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    animation: neon 3s alternate infinite ease-in-out;
+    --cor-neon:rgb(255, 255, 255);
+    
+}
+
+.wrapper3{
+    position:absolute;
+    width:300px;
+    height: 300px;
+    top:36%;
+    right:70%;
+    place-items:center;
+}
+
+#rec5{
+    --cor-neon:rgb(255, 238, 0);
+    animation: neon 1.5s alternate infinite ease-in-out;
+    position:absolute;
+    width:300px;
+    height: 300px;
+    top:80%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+#rec6{
+    
+    
+ 
+    position:absolute;
+    width:190px;
+    height:190px;
+    top:80%;
+    left:1000px;
+    transform: translate(-50%, -50%);
+    animation: neon 3s alternate infinite ease-in-out;
+    --cor-neon:rgb(255, 255, 255);
+    
+}
+
+.wrapper3{
+    position:absolute;
+    width:300px;
+    height: 300px;
+    top:36%;
+    right:70%;
+    place-items:center;
+}
+
+
+#hs{
+position:absolute;
+left:127px;
+bottom:315px;
+font-style: normal;
+color:white;
+z-index: 1;
+
+}
+
+#hss{
+    position:absolute;
+    
+    bottom:315px; 
+    left:600px;
+    font-style: normal;
+    color:white;
+    z-index: 1;
+}
+
+#hsss{
+    position:absolute;
+    bottom:315px;
+    left:1035px;
+    font-style: normal;
+    color:white;
+    z-index: 1;
+}
+
+#hssss{
+    position:absolute;
+    
+    top:100px; 
+    left:545px;
+    font-style: normal;
+    color:white;
+    z-index: 1;
+}
+
+#fundo{
+    position:absolute;
+    width: 100% ;
+    height: 100% ;
+}
+.conteudo{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+
+  body::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);        /* color of the tracking area */
+  }
+
+
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 30, 0);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(255, 182, 182);  /* creates padding around scroll thumb */
+  }
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="work.css">
+    <title>Trabalhe comigo</title>
+</head>
+<body>
+
+    <div id="nav">
+    <nav class="menu-drop">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="skills.html">Minhas skills</a></li>
+            <li><a href="perfil.html">Meu perfil</a></li>
+          
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="work.html">Trabalhe comigo</a></li>
+            <section id="mixer">
+
+                <button id="minus" onclick="diminuirvolume()">--</button>
+                <button id="mainus" onclick="aumentarvolume()">++</button>
+                <button id="omega" onclick="tocar()">Tocar</button>
+                <button id="beta"  onclick="pausar()">Pausar</button>
+                
+                
+            
+            
+                <label id="lb1" for="omega">
+                    <img id="icn1" src="play-16.png">
+                 </label>
+            
+                 <label id="lb2" for="minus">
+                    <img id="icn2" src="volume minus.png">
+                    </label>
+            
+                    <label id="lb3" for="mainus">
+                        <img  id="icn3"src="volume plus.png">
+                        </label>
+            
+                        <label id="lb4" for="beta">
+                            <img id="icn4" src="pause.png">
+                        </label>
+ 
+         
+ 
+                   
+            
+                        </section>
+ 
+                        <section id="mixer2">
+                         <progress id="progresso" max="0" value="0"></progress>
+         
+         
+                         <span id="tempo_atual">00:00:00</span> 
+                     <span id="tempo_total">00:00:00</span>
+                     </section>
+        </ul>
+    </nav>
+    </div>
+<h2 align="center" id="hs">DESENVOLVIMENTO <BR>WEB</h2>
+    <h2 align="center" id="hss">CRIAÇÃO DE <BR>TEMPLATES</h2>
+        <h2 align="center" id="hsss">CRIAÇÃO DE<BR>DESIGNS</h2>
+            <h1 align="center" id="hssss">MEUS SERVIÇOS</h1>
+
+           <main class="conteudo">
+            <img id="fundo" src="gifs.gif">
+           </main> 
+
+    <div class="cont1">
+        <div class="wrapper1">
+            
+            <img  id="rec1" src="retangulo.png">
+            <img  id="rec2" src="template.png">
+        </div>
+    </div>
+
+
+    <div class="cont2">
+        <div class="wrapper2">
+            
+            <img  id="rec3" src="retangulo.png">
+            <img  id="rec4" src="webdev.png">
+        </div>
+    </div>
+
+
+    <div class="cont3">
+        <div class="wrapper3">
+            
+            <img  id="rec5" src="retangulo.png">
+            <img  id="rec6" src="design.png">
+        </div>
+    </div>
+
+ <!--player de audio principal-->
+ <audio controls="controls" id="audio" type="mp3/audio" >
+    <source src="shinig justice.mp3">
+</audio>
+
+ <!--scripts que conectam a arquivos js para controle de eventos de som-->
+ <script type="text/javascript" src="funções.js">
+</script>
+
+<script type="text/javascript" src="mixer.js">
+</script>
+
+   
+
+   
+</body>
+</html>
